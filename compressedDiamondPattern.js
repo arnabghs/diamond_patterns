@@ -51,6 +51,11 @@ const makeLowerPart = function (linesLower,firstchar,lastchar,midchars){
   let firstCharacter = firstchar;
   let lastCharacter = lastchar;
   while (index < linesLower){
+    if (index == linesLower-1){
+      firstCharacter = "*";
+      lastCharacter = "";
+      widthOfHollow = 0;
+    }
     result += delimeter;
     delimeter = "\n";
     result += generateLine(" ",widthOfSpace)+firstCharacter;
@@ -58,11 +63,6 @@ const makeLowerPart = function (linesLower,firstchar,lastchar,midchars){
     widthOfSpace += 1;
     widthOfHollow -= 2;
     index++;
-    if (index == linesLower-1){
-      firstCharacter = "*";
-      lastCharacter = "";
-      widthOfHollow = 0;
-    }
   }
   return result;
 }

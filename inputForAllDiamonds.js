@@ -1,0 +1,12 @@
+filled|4
+filled|5
+filled|10
+filled|9
+hollow|4
+hollow|5
+hollow|10
+hollow|9
+angled|6
+angled|5
+angled|11
+angled|9
